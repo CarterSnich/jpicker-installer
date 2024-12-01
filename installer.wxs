@@ -9,7 +9,7 @@
     Manufacturer="jcpicker"
     UpgradeCode="f2405f33-2665-4648-b0cc-72fea744ba9a"
   >
-    <Icon Id="icon.ico" SourceFile="icon.ico" />
+    <Icon Id="icon.ico" SourceFile="TEMP\icon.ico" />
     <Feature Id="ProductFeature" Title="jcpicker" Level="1">
       <ComponentRef Id="ProductComponent" />
     </Feature>

@@ -1,1 +1,0 @@
-curl -fLO https://annystudio.com/jcpicker.exe
