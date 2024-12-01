@@ -1,0 +1,41 @@
+﻿<Wix
+  xmlns="http://wixtoolset.org/schemas/v4/wxs"
+  xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui"
+>
+  <Package
+    Name="jcpicker"
+    Language="1033"
+    Version="6.0"
+    Manufacturer="jcpicker"
+    UpgradeCode="f2405f33-2665-4648-b0cc-72fea744ba9a"
+  >
+    <Icon Id="icon.ico" SourceFile="icon.ico" />
+    <Feature Id="ProductFeature" Title="jcpicker" Level="1">
+      <ComponentRef Id="ProductComponent" />
+    </Feature>
+    <StandardDirectory Id="AppDataFolder">
+      <Directory Id="INSTALLFOLDER" Name="jcpicker">
+        <Component
+          Id="ProductComponent"
+          Guid="f2405f33-2665-4648-b0cc-72fea744ba9a"
+        >
+          <File Id="Executable" Name="jcpicker.exe" Source="jcpicker.exe" />
+          <Shortcut
+            Name="Just Color Picker"
+            Directory="DesktopFolder"
+            Advertise="yes"
+            WorkingDirectory="INSTALLFOLDER"
+            Icon="icon.ico"
+          />
+          <Shortcut
+            Name="Just Color Picker"
+            Directory="ProgramMenuFolder"
+            Advertise="yes"
+            WorkingDirectory="INSTALLFOLDER"
+            Icon="icon.ico"
+          />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+  </Package>
+</Wix>;

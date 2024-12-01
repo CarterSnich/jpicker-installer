@@ -1,0 +1,1 @@
+wix.exe build installer.wxs -o output/jcpicker-picker
